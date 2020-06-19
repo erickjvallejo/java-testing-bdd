@@ -1,21 +1,13 @@
-package com.checkout;
+package com.checkout.steps;
 
+import com.checkout.Checkout;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
 
-import org.junit.runner.RunWith;
-
-import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 import static org.junit.Assert.assertEquals;
 
-@RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty", "summary"},
-        snippets = CAMELCASE,
-        features = "src/test/resources/checkout.feature")
 public class CheckoutSteps {
 
     private Checkout checkout;
@@ -33,7 +25,6 @@ public class CheckoutSteps {
     @When("I checkout {int} {string}")
     public void iCheckout(int itemCount, String itemName) {
         checkout.addProductToShoppingCar(itemCount, itemName);
-
     }
 
     @Then("the total price should be {int}")
