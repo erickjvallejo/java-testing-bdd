@@ -9,7 +9,9 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = {"pretty", "summary"},
         snippets = CAMELCASE,
-        features = "classpath:features/checkout/checkout.feature")
+        features = "classpath:features/checkout/checkout.feature"
+        //glue = "com.calculator.steps" //Optional
+)
 public class RunCheckoutTest {
 
 }

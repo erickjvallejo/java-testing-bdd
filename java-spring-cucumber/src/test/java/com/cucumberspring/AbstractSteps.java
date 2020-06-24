@@ -1,8 +1,8 @@
-package com.cucumberspring.cucumber.stepdefs;
+package com.cucumberspring;
 
 import org.springframework.test.web.servlet.ResultActions;
 
-public abstract class StepDefs {
+public abstract class AbstractSteps {
 
     protected ResultActions actions;
 

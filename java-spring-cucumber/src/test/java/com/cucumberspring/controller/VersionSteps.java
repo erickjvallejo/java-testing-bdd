@@ -1,6 +1,6 @@
-package com.cucumberspring.cucumber.stepdefs;
+package com.cucumberspring.controller;
 
-import com.cucumberspring.controller.VersionController;
+import com.cucumberspring.AbstractSteps;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -14,7 +14,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-public class VersionStepdefs extends StepDefs {
+public class VersionSteps extends AbstractSteps {
     @Autowired
     private VersionController versionController;
     private MockMvc restVersionMockMvc;

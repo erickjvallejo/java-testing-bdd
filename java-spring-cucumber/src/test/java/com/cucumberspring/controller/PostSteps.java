@@ -1,6 +1,6 @@
-package com.cucumberspring.cucumber.stepdefs;
+package com.cucumberspring.controller;
 
-import com.cucumberspring.controller.PostController;
+import com.cucumberspring.AbstractSteps;
 import com.cucumberspring.domain.Post;
 import com.cucumberspring.repository.PostRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -20,9 +20,9 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-public class PostStepdefs extends StepDefs {
+public class PostSteps extends AbstractSteps {
 
-    private static final Logger LOG = LoggerFactory.getLogger(PostStepdefs.class);
+    private static final Logger LOG = LoggerFactory.getLogger(PostSteps.class);
     @Autowired
     private PostController postController;
     @Autowired
@@ -30,7 +30,7 @@ public class PostStepdefs extends StepDefs {
     private MockMvc restVersionMockMvc;
     private ObjectMapper objectMapper = new ObjectMapper();
 
-    public PostStepdefs() {
+    public PostSteps() {
     }
 
     @Given("as user can create a new post")

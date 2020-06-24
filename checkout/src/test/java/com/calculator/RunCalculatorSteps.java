@@ -11,7 +11,7 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
         plugin = {"pretty", "summary", "html:target/report.html", "json:target/report.json"},
         snippets = CAMELCASE,
         features = {"classpath:features/calculator/calculator.feature"},
-        glue = "com.calculator.steps",
+        //glue = "com.calculator.steps", //Optional
         tags = "@sum or @subtract or @multiplication or @division"
 
 )
