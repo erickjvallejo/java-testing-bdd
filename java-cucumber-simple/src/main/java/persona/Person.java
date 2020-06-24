@@ -1,4 +1,4 @@
-package io.cucumber.shouty;
+package persona;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,10 +7,10 @@ public class Person {
 
     private String name;
     private int distance = 0;
-    private List<String> messagesHeard = new ArrayList<String>();
+    private List<String> messagesHeard = new ArrayList<>();
 
 
-    private List<String> messagesSaid = new ArrayList<String>();
+    private List<String> messagesSaid = new ArrayList<>();
 
     public Person(String name) {
         this.name = name;

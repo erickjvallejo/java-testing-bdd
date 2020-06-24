@@ -3,16 +3,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>java.cucumber.simple</groupId>
-    <artifactId>java-simple-cucumber</artifactId>
-    <version>0.0.1</version>
+    <artifactId>java-cucumber-simple</artifactId>
+    <version>0.0.2</version>
     <packaging>jar</packaging>
-    <name>java-simple-cucumber</name>
+    <name>java-cucumber-simple</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>11</java.version>
         <junit.version>4.13</junit.version>
-        <cucumber.version>6.0.0</cucumber.version>
+        <cucumber.version>6.1.1</cucumber.version>
         <maven.compiler.version>3.8.1</maven.compiler.version>
         <maven.surefire.version>2.22.1</maven.surefire.version>
     </properties>
@@ -29,13 +29,6 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
             <version>${cucumber.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
 
