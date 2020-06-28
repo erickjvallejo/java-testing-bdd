@@ -12,12 +12,15 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api")
-public class PostController {
+public class    PostController {
 
     private final Logger log = LoggerFactory.getLogger(PostController.class);
-
-    @Autowired
     private PostRepository postRepository;
+
+
+    public PostController(PostRepository postRepository) {
+        this.postRepository = postRepository;
+    }
 
     @GetMapping(value = {"", "/"})
     public List<Post> getAll() {
