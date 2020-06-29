@@ -1,6 +1,6 @@
 ## BDD in Java using Cucumber, JUnit & Spring-Boot
 
-Behavior Driven Development (BDD) in Java using JUnit4, JUnit5 & Spring-Boot.
+Behavior Driven Development (BDD) in Java using JUnit4, JUnit5, Spring-Boot and Selenium WebDriver.
 
 ## Running the tests
 
