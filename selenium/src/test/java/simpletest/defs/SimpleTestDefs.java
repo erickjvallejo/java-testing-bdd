@@ -25,7 +25,7 @@ public class SimpleTestDefs {
     @Before
     public void setUp() {
 
-        System.setProperty("webdriver.chrome.driver", "/opt/chromedriver_linux64/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "D:\\Program Files\\chromedriver\\chromedriver.exe");
         driver = new ChromeDriver();
         log.info("Created the ChromeDriver");
     }
